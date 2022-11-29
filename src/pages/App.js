@@ -37,6 +37,12 @@ function App() {
     console.log('Removendo registro', id);
 
     // utilizar filter.
+    const reporemovido = repos.filter(function(repos) {
+      return repos.id != id
+    })
+
+    setRepos(reporemovido)
+
   }
 
 
